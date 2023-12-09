@@ -1,0 +1,339 @@
+.navbar-contenedor {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "nav-1 nav-2 nav-4 nav-5" "nav-3 nav-3 nav-3 nav-3";
+}
+
+.link {
+  text-decoration: none;
+  color: #080707;
+  transition: 0.5s ease;
+}
+.link:hover {
+  border-radius: 15px;
+  background-color: #000000;
+  color: white;
+}
+
+.nav-1 {
+  text-align: center;
+  padding-left: 30px;
+  grid-area: nav-1;
+}
+
+.nav-2 {
+  text-align: center;
+  grid-area: nav-2;
+}
+
+.nav-4 {
+  text-align: center;
+  grid-area: nav-4;
+}
+
+.nav-5 {
+  text-align: center;
+  padding-right: 30px;
+  grid-area: nav-5;
+}
+
+.nav3 {
+  height: 200px;
+  grid-area: nav-3;
+}
+
+.nav-3 img {
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  margin-left: 70vh;
+}
+
+#nav-font {
+  font-family: "Oswald", sans-serif;
+  padding-top: 65px;
+  font-size: 60px;
+}
+
+/*Peliculas*/
+section {
+  align-items: center;
+  display: flex;
+  width: 900px;
+  height: 430px;
+  margin: 0;
+  padding: 0;
+}
+section img {
+  margin-left: 3px;
+  padding: 0;
+  width: 113px;
+  height: 430px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+section img:hover {
+  cursor: crosshair;
+  width: 215px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+/*galeria baja del index*/
+.galeria-de-peliculas {
+  margin: 20px;
+  margin-top: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2, 1fr;
+  gap: 5px;
+  background-color: #ffffff;
+  grid-template-areas: "area1 area2 area2" "area1 area3 area4";
+}
+
+.area1 {
+  grid-area: area1;
+  width: 400px;
+  margin-left: 200px;
+  border-radius: 30px;
+  background-color: rgba(182, 38, 38, 0);
+}
+.area1 img {
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  transition: 0.5s;
+  border: #080707 5px solid;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+.area1 img:hover {
+  transform: scale(1);
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+.area2 {
+  grid-area: area2;
+  width: 700px;
+  height: 250px;
+  border-radius: 15px;
+  background-color: rgba(140, 138, 138, 0);
+}
+.area2 img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  transition: 0.5s;
+  border: #080707 5px solid;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+.area2 img:hover {
+  transform: scale(1);
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+.area3 {
+  grid-area: area3;
+  width: 350px;
+  height: 350px;
+  border-radius: 15px;
+  background-color: rgba(149, 147, 147, 0);
+}
+.area3 img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  transition: 0.5s;
+  border: #080707 5px solid;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+.area3 img:hover {
+  transform: scale(1);
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+.area4 {
+  margin-right: 10rem;
+  grid-area: area4;
+  width: 350px;
+  height: 350px;
+  border-radius: 15px;
+  background-color: rgba(250, 235, 215, 0);
+}
+.area4 img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  transition: 0.5s;
+  border: #080707 5px solid;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+.area4 img:hover {
+  transform: scale(1);
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+.galeria-de-peliculas h2 {
+  color: #000000;
+  position: absolute;
+  font-size: 60px;
+  letter-spacing: 50px;
+  left: 400px;
+  top: 760px;
+  font-family: "Oswald", sans-serif;
+  animation-name: Ccolor;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-duration: 3s;
+}
+
+@keyframes Ccolor {
+  0% {
+    color: red;
+  }
+  50% {
+    color: #000000;
+  }
+  75% {
+    color: red;
+  }
+  100% {
+    color: #000000;
+  }
+}
+/*FOOTER*/
+.redes-sociales {
+  margin-top: 5rem;
+  background-color: #736f6f;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+  grid-template-areas: "f1 f2" "f3 f3";
+}
+.redes-sociales .f1 {
+  text-align: start;
+}
+.redes-sociales .f2 {
+  text-align: start;
+}
+.redes-sociales .f3 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-weight: bold;
+}
+.redes-sociales img {
+  width: 30px;
+}
+
+/*NOSOTROS*/
+/*CARRUSEL*/
+.slide {
+  margin-top: 10px;
+}
+.slide img {
+  height: 65vh;
+}
+
+/*IMAGENES DE TRABAJADORES*/
+.cuerpo {
+  margin-top: 200px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2, 1fr;
+  gap: 10rem;
+}
+
+.t-1 {
+  height: 400px;
+  width: 350px;
+  margin-left: 15rem;
+}
+.t-1 div img {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-20deg);
+  border: 2px solid black;
+  transition: transform 0.9s ease;
+}
+.t-1 div img:hover {
+  transform: scale(1.1);
+  border-radius: 100px;
+}
+
+.t-2 {
+  background-color: rgba(0, 0, 0, 0);
+  height: 400px;
+  width: 350px;
+  margin-left: 4rem;
+}
+.t-2 div img {
+  width: 100%;
+  height: 100%;
+  transform: rotate(20deg);
+  border: 2px solid black;
+  transition: transform 0.9s ease;
+}
+.t-2 div img:hover {
+  transform: scale(1.1);
+  border-radius: 100px;
+}
+
+.t-3 {
+  background-color: rgba(0, 0, 0, 0);
+  width: 350px;
+  height: 400px;
+  margin-left: 15rem;
+}
+.t-3 div img {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-20deg);
+  border: 2px solid black;
+  transition: transform 0.9s ease;
+}
+.t-3 div img:hover {
+  transform: scale(1.1);
+  border-radius: 100px;
+}
+
+.t-4 {
+  background-color: rgba(0, 0, 0, 0);
+  width: 350px;
+  height: 400px;
+  margin-left: 4rem;
+}
+.t-4 div img {
+  width: 100%;
+  height: 100%;
+  transform: rotate(20deg);
+  border: 2px solid black;
+  transition: transform 0.9s ease;
+}
+.t-4 div img:hover {
+  transform: scale(1.1);
+  border-radius: 100px;
+}
+
+.img-t {
+  border-radius: 100px;
+  height: 100%;
+  transition: 0.5 ease;
+}
+.img-t:hover {
+  background-color: radial-gradient(ellipse 250px 180px, black, white);
+}
+
+/*# sourceMappingURL=style.css.map */
