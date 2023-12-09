@@ -331,3 +331,147 @@ section{
         background-color: radial-gradient(ellipse 250px 180px,black,white);
     }
 }
+@media(max-width:768px){
+    .navbar-contenedor{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "nav-1 nav-2" 
+        "nav-4 nav-5";
+        margin-bottom: 30px;
+    }
+    #nav-font{
+        font-family: 'Oswald', sans-serif;
+        padding-top: 65px;
+        font-size: 30px;
+    }
+    .nav-1{
+        grid-area: nav-1;
+    }
+    .nav-2{
+        grid-area: nav-2;
+    }
+    .nav-4{
+        margin-left: 2vh;
+        grid-area: nav-4;
+    }
+    .nav-5{
+        grid-area: nav-5;
+        margin-left: 2vh;
+    }
+    .slide{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .link:hover{
+        border-radius: 15px;
+        background-color: #000000;
+        color: white;
+      }
+
+    .cuerpo{
+        margin-top: 80px;
+        margin-bottom: 40px;
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: (4,1fr);
+        gap: 6rem;
+        grid-template-areas: 
+        "t-1"
+        "t-2"
+        "t-3"
+        "t-4"
+        ;
+    }
+    .t-1{
+        margin-left: 13rem;
+    }
+    .t-2{
+        margin-left: 13rem;
+    }
+    .t-3{
+        margin-left: 13rem;
+    }
+    .t-4{
+        margin-left: 13rem;
+    }
+    .galeria-de-peliculas{
+        
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: (2,1fr);
+        gap: 7px;
+        background-color: #ffffff;
+        grid-template-areas: 
+        "area1 area2 area2"
+        "area1 area3 area4";
+    }
+    .area1{
+        grid-area: area1;
+        width: 250px;
+        margin-left: 30px;
+        border-radius: 30px;
+        background-color: #b6262600;
+    }
+    .area2{
+        grid-area: area2;
+        width: 400px;
+        height: 250px;
+        border-radius: 15px;
+        background-color: #8c8a8a00;
+    }
+    .area3{
+        grid-area: area3;
+        width: 200px;
+        height: 250px;
+        border-radius: 15px;
+        background-color: #95939300;
+    }
+    .area4{
+        grid-area: area4;
+        width: 180px;
+        height: 250px;
+        border-radius: 15px;
+        background-color: rgba(250, 235, 215, 0);
+        
+    }
+    .galeria-de-peliculas h2{
+        position: absolute;
+        font-size: 90px;
+        letter-spacing: 20px;
+        left: 77px;
+        top: 750px;
+        font-family: 'Oswald', sans-serif;
+    }
+    section{
+        align-items: center;
+        display:grid;
+        grid-template-columns: (6, 1fr);
+        grid-template-rows: 200px 200px;
+        grid-template-areas: 
+        "ig-1 ig-2 ig-3 ig-4 ig-5 ig-6"
+        "ig-7 ig-8 ig-9 ig-10 ig-11 ig-12";
+        gap: 1px;
+        width: 100%;
+        height: 600px;
+        margin-top: 80px;
+    }
+    section img{
+        margin: 0;
+        padding: 0;
+        width:60px;
+        flex-grow: 1;
+        height: 100%;
+        opacity: .8;
+        transition: .5s ease;
+    }
+    section img:hover{
+        cursor:crosshair;
+        width: 110px;
+        opacity: 1;
+        filter:contrast(120%);
+    }
+}
